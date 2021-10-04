@@ -4,11 +4,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-ul{
+header ul{
     list-style: none;
 }
 
-ul li a{
+header a{
     text-decoration: none;
 }
 
@@ -122,10 +122,134 @@ header{
 #servicos{
     background-color: #122A57;
     display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 3rem;
     justify-content: center;
 }
 
+#servicos .flex-container{
+    justify-content: space-around;
+    gap: 3rem;
+}
 
+#servicos h3{
+    width: 100%;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.servico-item{
+    color: #fff;
+    text-align: center;
+}
+.servico-item p{
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.servico-item a{
+    color: #122A57;
+    background-color: #fff;
+    margin: 1rem 0;
+    font-weight: 600;
+    display: block;
+    padding: 0.35rem;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: solid 2px #fff;
+
+    transition: color 0.25s;
+    transition: background-color 0.25s;
+}
+
+
+.servico-item a:hover{
+    background-color: #122A57;
+    color: #fff
+}
+
+#planos{
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#planos h3{
+    width: 100%;
+    color: #122A57;
+    font-size: 2rem;
+}
+
+.plano-item{
+    border: solid 5px #122A57;
+    padding: 1.25rem 1.75rem;
+}
+
+.plano-item h4, .plano-item a{
+    text-align: center;
+    width: 100%;
+
+}
+
+.plano-item h4{
+    font-size: 1.5rem;
+    border-bottom: solid 0.25rem #122A57;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.plano-item li{
+    list-style: inside;
+}
+
+.plano-item a{
+    display: block;
+    background-color: #122A57;
+    color: #fff;
+    padding: 0.35rem;
+    width: 12rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    border: solid 2px #122A57;
+
+    transition: color 0.25s;
+    transition: background-color 0.25s;
+}
+
+
+.plano-item a:hover{
+    background-color: #fff;
+    color: #122A57
+
+}
+
+footer{
+    width: calc(100% - 6rem);
+    height: 4rem;
+    background-color: #122A57;
+    color: #fff;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+
+footer a{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a:hover{
+    filter: brightness(0.75);
+}
 
 @media screen and (max-width: 700px){
     #menu{
@@ -144,6 +268,11 @@ header{
     #copy-quem-somos{
         max-width: 100%;
     
+    }
+
+    footer{ 
+        justify-content: center;
+        padding: 0.5rem 3rem;
     }
     
 }
